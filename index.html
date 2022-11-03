@@ -1,21 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Static Template</title>
-  </head>
-  <body>
-    <section class="section" id="header">
-      <h1>The is header 1</h1>
-      <h2>The is header 2</h2>
-      <h3>The is header 3</h3>
-      <h4>The is header 4</h4>
-      <h5>The is header 5</h5>
-      <h6>The is header 6</h6>
-    </section>
 
-    <section class="section" id="paragrahp"></section>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Static Template</title>
+</head>
+
+<body>
+  <section class="section" id="header">
+    <h1>The is header 1</h1>
+    <h2>The is header 2</h2>
+    <h3>The is header 3</h3>
+    <h4>The is header 4</h4>
+    <h5>The is header 5</h5>
+    <h6>The is header 6</h6>
+  </section>
+
+  <section class="section" id="paragrahp">
+
+    <p>
+      This is paragrahp
+    </p>
+  </section>
+
+  <section class="section" id="formatting">
+    <p>This is a <strong>Bold</strong> </p>
+    <p>Yhis is a <em>Empasize</em></p>
+    <p><mark>This is a mark</mark></p>
+    <p>This is a <sub>subscript</sub></p>
+    <p> This is a <del> Strikeout</del></p>
+  </section>
+
+  <section class="section" id="qoutations">
+    <p><q>This is a qoutations</q></p>
+    <blockquote>
+      This is a qoutations . Ths is a blockquote .This is a blockquote
+    </blockquote>
+    <bdo dir="rtl"> This is a bdo </bdo>
+    <p> This is a <abbr title="World Healt Organization">WHO</abbr></p>
+  </section>
+
+  <section class="section" is="link">
+    <a href="https://google.com">google</a><br>
+    <a href="https://google.com" target="-blank">google target google</a>
+    <a href="https://google.com">
+      <p> This is a paragrahp</p>
+    </a>
+  </section>
+
+  <section class="section" id="media">
+    <img src="image/Firefox_logo,_2017.svg.png" alt="" width="400">
+    <img src="image/Firefox_logo,_2017.svg.png" alt="firefox" width="400">
+    <video src="https://futureskill.s3-ap-southeast-1.amazonaws.com/super+content.mp4" width="400"></video>
+    <audio src="audio/Mulholland - King Canyon (1).mp3"> </audio>
+
+  </section>
+
+  <section class="section" id="table">
+    <table>
+      <caption>My table</caption>
+      <tr>
+        <th colspan="2" rowspan="2">title</th>
+        <th>date</th>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>20/02/2020</td>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>20/02/2020</td>
+      </tr>
+    </table>
+
+  </section>
+
+  <section class="section" id="list">
+    <ol type="A">
+      <li> my name is a</li>
+      <li>my name is b</li>
+      <li> my name is c</li>
+    </ol>
+    <ol type="I">
+      <li> my name is a</li>
+      <li>my name is b</li>
+      <li> my name is c</li>
+    </ol>
+    <ol>
+      <li> my name is a</li>
+      <li>my name is b</li>
+      <li> my name is c</li>
+    </ol>
+
+    <ul>
+      <li> my name is a</li>
+      <li>my name is b</li>
+      <li> my name is c</li>
+    </ul>
+
+    <ul style="list-style-type:square;">
+      <li> my name is a</li>
+      <li>my name is b</li>
+      <li> my name is c</li>
+    </ul>
+    <dl>
+      <dt>A</dt>
+      <dd>My name is A </dd>
+    </dl>
+  </section>
+
+  <section class="section" id="iframe">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/YImSNnOfwbM" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </section>
+
+  <section class="section" id="script">
+    <p id="test-script">This is a</p>
+    <script>
+      function runAlert() {
+        alert("This is a SCRIPT");
+
+      }
+      document.getElementById('test-script').innerHTML = "My name is Kao"
+    </script>
+    <script type="text/javascript" src="" async defer> </script>
+  </section>
+
+  <section class="section" id ="code"> 
+    <pre>
+      <code>
+        function test(a,b){
+          return a+b;
+        }
+      </code>
+    </pre>
+    <p> x<var>x</var> = x 1+2</p>
+
+  </section>
+  <section class="section" id = "form">
+    <form action="">
+      text: <input type="text"> <br><br>
+      text2: <input type="text2" readonly value="Read me"> <br><br>
+      number: <input type="number"><br><br>
+      password: <input type="password"><br><br>                                   
+      submit: <input type="submit"><br> <br>
+      textarea: <textarea name ="" cols="30" rows = "10"> </textarea><br><br>
+       select:<select name="" id="">
+        <option value="A">A</option>
+        <option value="B ">B</option>
+        <option value="C">C</option>
+       </select><br><br>
+       Blue:<input type="radio" value="Blue" name="" id=""><br><br>
+       Red:<input type="radio" value="Red" name="" id=""><br><br>
+       Green: <input type="checkbox" name="" id=""><br><br>
+       <input type="text" disabled><br><br>
+       <button onsubmit="" type="submit">Click Me
+
+       </button>
+
+
+
+    </form>
+  </section>
+</body>
+
+
+
+
 </html>
